@@ -115,3 +115,27 @@ b > 5 || c < 8; // returns true because b > 5 is true
 // Use conditionals and comparisons to find which of the 3 is largest 
 // Console.log the result
 // Result: “x is the largest number”
+let First = prompt("Enter a number");
+let Second = prompt("Enter a second number");
+let Third = prompt("Enter a final number");
+
+if (First == Second || Second == Third) {
+    if (First == Second && Second > Third) {
+        alert("The first and second number are the biggest!")
+    }
+    else if (First == Third && Third > Second) {
+        alert("The first and third number are biggest!")
+    }
+    else if (Second == Third && Third > First)) {
+        alert("The second and third numbner are the biggest!")
+    }
+}
+else if (Second > First && Second > Third) {
+    alert("The second number is the biggest!")
+}
+else if (Third > First && Third > Second) {
+    alert("The third number is the biggest")
+}
+else if (First > Second && First > Third) {
+    alert("The first is the biggest!");
+}
